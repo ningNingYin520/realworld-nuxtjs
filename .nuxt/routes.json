@@ -1,43 +1,51 @@
 [
   {
     "path": "/",
-    "component": "C:\\\\Users\\\\26944\\\\Desktop\\\\js课件\\\\3-3\\\\realworld-nuxtjs\\\\pages\\\\layout",
+    "component": "E:\\\\LogouReview\\\\realworld-nuxtjs\\\\pages\\\\layout",
     "children": [
       {
         "path": "",
         "name": "home",
-        "component": "C:\\\\Users\\\\26944\\\\Desktop\\\\js课件\\\\3-3\\\\realworld-nuxtjs\\\\pages\\\\home"
+        "component": "E:\\\\LogouReview\\\\realworld-nuxtjs\\\\pages\\\\home",
+        "_name": "_543d5d47"
       },
       {
         "path": "/login",
         "name": "login",
-        "component": "C:\\\\Users\\\\26944\\\\Desktop\\\\js课件\\\\3-3\\\\realworld-nuxtjs\\\\pages\\\\login"
+        "component": "E:\\\\LogouReview\\\\realworld-nuxtjs\\\\pages\\\\login",
+        "_name": "_33a69401"
       },
       {
         "path": "/register",
         "name": "register",
-        "component": "C:\\\\Users\\\\26944\\\\Desktop\\\\js课件\\\\3-3\\\\realworld-nuxtjs\\\\pages\\\\login"
+        "component": "E:\\\\LogouReview\\\\realworld-nuxtjs\\\\pages\\\\login",
+        "_name": "_33a69401"
       },
       {
         "path": "/profile/:username",
         "name": "profile",
-        "component": "C:\\\\Users\\\\26944\\\\Desktop\\\\js课件\\\\3-3\\\\realworld-nuxtjs\\\\pages\\\\profile"
+        "component": "E:\\\\LogouReview\\\\realworld-nuxtjs\\\\pages\\\\profile",
+        "_name": "_850f2f7e"
       },
       {
         "path": "/settings",
         "name": "settings",
-        "component": "C:\\\\Users\\\\26944\\\\Desktop\\\\js课件\\\\3-3\\\\realworld-nuxtjs\\\\pages\\\\settings"
+        "component": "E:\\\\LogouReview\\\\realworld-nuxtjs\\\\pages\\\\settings",
+        "_name": "_fa569eea"
       },
       {
         "path": "/editor",
         "name": "editor",
-        "component": "C:\\\\Users\\\\26944\\\\Desktop\\\\js课件\\\\3-3\\\\realworld-nuxtjs\\\\pages\\\\editor"
+        "component": "E:\\\\LogouReview\\\\realworld-nuxtjs\\\\pages\\\\editor",
+        "_name": "_34a00fd5"
       },
       {
         "path": "/article:slug",
         "name": "article",
-        "component": "C:\\\\Users\\\\26944\\\\Desktop\\\\js课件\\\\3-3\\\\realworld-nuxtjs\\\\pages\\\\article"
+        "component": "E:\\\\LogouReview\\\\realworld-nuxtjs\\\\pages\\\\article",
+        "_name": "_b77aa8e4"
       }
-    ]
+    ],
+    "_name": "_406ee992"
   }
 ]
