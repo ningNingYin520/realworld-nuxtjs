@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-node@master
     - run: npm install
     - run: npm run build 
-    - run: tar -zcvf release.tgz .nuxt static app.js nuxt.config.js package.json package-lock.json ecosystem.config.js
+    - run: tar -zcvf release.tgz .nuxt static nuxt.config.js package.json package-lock.json pm2.config.json
     
     # 发布 Release  
     - name: Create Release     
@@ -38,7 +38,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}      
       with:        
-        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-futuresteps        asset_path: ./release.tgz        asset_name: release.tgz        asset_content_type: application/x-tgz
+        upload_url: ${{ steps.create_release.outputs.upload_url }}       
+        asset_path: ./release.tgz        
+        asset_name: release.tgz        
+        asset_content_type: application/x-tgz
     
     # 部署到服务器    
     - name: Deploy      
@@ -53,4 +56,4 @@ jobs:
           wget https://github.com/lipengzhou/realworldnuxtjs/releases/latest/download/release.tgz -O release.tgz          
           tar zxvf release.tgz          
           npm install --production          
-          pm2 reload ecosystem.config.js
+          pm2 reload mp2.config.json
